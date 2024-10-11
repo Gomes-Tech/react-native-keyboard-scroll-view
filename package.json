@@ -1,6 +1,6 @@
 {
   "name": "@gomestech/react-native-keyboard-scroll-view",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "KeyboardScrollView is a component for React Native that automatically adjusts the content of the screen when the keyboard is displayed. It keeps text fields visible by smoothly scrolling the screen, offering a practical solution for forms and text entries.",
   "source": "./src/index.tsx",
   "main": "./lib/commonjs/index.js",
