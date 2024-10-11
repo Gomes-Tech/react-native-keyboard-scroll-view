@@ -18,6 +18,9 @@ Here is a description for your `KeyboardScrollView` library on npmjs:
 
 ```bash
 npm install react-native-keyboard-scroll-view
+```
+
+```bash
 yarn add react-native-keyboard-scroll-view
 ```
 
