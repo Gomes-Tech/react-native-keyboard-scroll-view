@@ -42,7 +42,7 @@
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
     "clean": "del-cli lib",
     "prepare": "bob build",
-    "deploy": "npm version patch && npm publish",
+    "deploy": "npm run prepare && npm version patch && npm publish",
     "release": "release-it"
   },
   "keywords": [
