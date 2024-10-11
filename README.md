@@ -1,7 +1,3 @@
-Here is a description for your `KeyboardScrollView` library on npmjs:
-
----
-
 ## KeyboardScrollView
 
 **KeyboardScrollView** is a library for **React Native** that provides a practical solution for managing keyboard visibility on screens with text input fields. It automatically adjusts the screen content, ensuring that text fields remain visible when the keyboard is displayed, facilitating form navigation and other interactions with inputs.
@@ -53,7 +49,3 @@ export default App;
 ### License
 
 MIT
-
----
-
-This description clearly explains the benefits and how to use the component, making it more accessible for other developers on npm.
