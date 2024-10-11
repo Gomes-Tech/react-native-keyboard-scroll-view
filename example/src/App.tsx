@@ -4,7 +4,7 @@ import KeyboardScrollView from 'react-native-keyboard-scroll-view';
 export default function App() {
   return (
     <KeyboardScrollView
-      contentContainerStyle={{ flex: 1 }}
+      contentContainerStyle={{ flexGrow: 1 }}
       additionalScrollHeight={20}
     >
       <View style={styles.container}>
