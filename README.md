@@ -1,33 +1,56 @@
-# react-native-keyboard-scroll-view
+Here is a description for your `KeyboardScrollView` library on npmjs:
 
-KeyboardScrollView is a component for React Native that automatically adjusts the content of the screen when the keyboard is displayed. It keeps text fields visible by smoothly scrolling the screen, offering a practical solution for forms and text entries.
+---
 
-## Installation
+## KeyboardScrollView
 
-```sh
+**KeyboardScrollView** is a library for **React Native** that provides a practical solution for managing keyboard visibility on screens with text input fields. It automatically adjusts the screen content, ensuring that text fields remain visible when the keyboard is displayed, facilitating form navigation and other interactions with inputs.
+
+### Features
+
+- **Compatible with iOS and Android**: Custom behaviors for each platform ensure a consistent experience across both.
+- **Automatic scroll adjustment**: When the keyboard opens, the content automatically scrolls so the focused text field stays visible.
+- **Customizable additional scroll height**: Add extra space above the keyboard using the `additionalScrollHeight` property.
+- **Full ScrollView support**: The component is based on React Native's `ScrollView` and retains all of its original functionalities.
+- **Seamless integration**: Easy to integrate into any React Native app.
+
+### Installation
+
+```bash
 npm install react-native-keyboard-scroll-view
+yarn add react-native-keyboard-scroll-view
 ```
 
-## Usage
+### Usage
 
+```jsx
+import React from 'react';
+import { View, TextInput, Text } from 'react-native';
+import KeyboardScrollView from 'react-native-keyboard-scroll-view';
 
-```js
-import { multiply } from 'react-native-keyboard-scroll-view';
+const App = () => {
+  return (
+    <KeyboardScrollView additionalScrollHeight={20}>
+      <View>
+        <TextInput placeholder="Enter your name" />
+        <TextInput placeholder="Enter your email" />
+        <Text>Other content</Text>
+      </View>
+    </KeyboardScrollView>
+  );
+};
 
-// ...
-
-const result = await multiply(3, 7);
+export default App;
 ```
 
+### Properties
 
-## Contributing
+- **`additionalScrollHeight`**: (optional) Sets the additional scroll height when the keyboard is displayed. Default value: `0`.
 
-See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
-
-## License
+### License
 
 MIT
 
 ---
 
-Made with [create-react-native-library](https://github.com/callstack/react-native-builder-bob)
+This description clearly explains the benefits and how to use the component, making it more accessible for other developers on npm.

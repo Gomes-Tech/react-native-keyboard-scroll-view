@@ -1,18 +1,15 @@
-import { useState, useEffect } from 'react';
-import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from 'react-native-keyboard-scroll-view';
+import { StyleSheet, Text, TextInput, View } from 'react-native';
+import KeyboardScrollView from 'react-native-keyboard-scroll-view';
 
 export default function App() {
-  const [result, setResult] = useState<number | undefined>();
-
-  useEffect(() => {
-    multiply(3, 7).then(setResult);
-  }, []);
-
   return (
-    <View style={styles.container}>
-      <Text>Result: {result}</Text>
-    </View>
+    <KeyboardScrollView additionalScrollHeight={20}>
+      <View style={styles.container}>
+        <TextInput placeholder="Enter your name" />
+        <TextInput placeholder="Enter your email" />
+        <Text>Other content</Text>
+      </View>
+    </KeyboardScrollView>
   );
 }
 
@@ -21,10 +18,5 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-  },
-  box: {
-    width: 60,
-    height: 60,
-    marginVertical: 20,
   },
 });
